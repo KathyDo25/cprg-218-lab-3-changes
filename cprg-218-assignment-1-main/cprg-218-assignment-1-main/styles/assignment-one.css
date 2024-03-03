@@ -1,0 +1,47 @@
+/* Mobile layout */
+@media screen and (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(1, 100%);
+    }
+    
+}
+  
+/* Tablet layout */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 30px;
+    }
+  
+    .card:last-child {
+        grid-column:1/span 2;
+        width: 100%
+    }
+    .card{
+        width:100%
+    }
+}
+  
+/* Desktop layout */
+@media screen and (min-width: 1200px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        gap: 15px
+    }
+}
+ 
+
+.iframe-container{
+    position: relative;
+    padding-bottom: 60%; 
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .iframe-container iframe{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+  }
+  
